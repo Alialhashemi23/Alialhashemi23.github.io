@@ -6,8 +6,10 @@ function Projects() {
     {
       id: 1,
       title: "ShmupGame",
-      description: "A 2D vertical top-down shoot-'em-up game built with C# and MonoGame, featuring player shooting mechanics, enemy waves, and collision detection.",
-      technologies: ["C#", "MonoGame", "Game Development"],
+      description: "A 2D vertical shoot-'em-up game built with MonoGame.",
+      technologies: ["C#", "MonoGame"],
+      repoUrl: "https://github.com/Alialhashemi23/ShmupGame",
+      liveUrl: "", // optional if you have a live link
       imageUrl: "https://via.placeholder.com/300x200?text=ShmupGame"
     },
     {
@@ -44,16 +46,25 @@ function Projects() {
               alt={project.title} 
               className="project-image"
             />
-            <div className="project-details">
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
-              <div className="tech-stack">
-                {project.technologies.map((tech, index) => (
-                  <span key={index} className="tech-tag">{tech}</span>
-                ))}
-              </div>
-            </div>
-          </div>
+      <div className="project-details">
+        <h3>
+          {project.repoUrl ? (
+            <a href={project.repoUrl} target="_blank" rel="noopener noreferrer">
+              {project.title}
+            </a>
+          ) : (
+            project.title
+          )}
+        </h3>
+        <p>{project.description}</p>
+
+        <div className="tech-stack">
+          {project.technologies.map((tech, index) => (
+            <span key={index} className="tech-tag">{tech}</span>
+          ))}
+        </div>
+        </div>
+      </div>
         ))}
       </div>
     </motion.div>
