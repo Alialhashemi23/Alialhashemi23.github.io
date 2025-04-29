@@ -1,0 +1,131 @@
+/* === HERO SECTION === */
+.home-hero {
+    text-align: center;
+    padding: 6rem 1rem 4rem;
+    background: radial-gradient(circle at top, #1f1f1f, #121212);
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  .home-hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Space Grotesk', sans-serif;
+    color: #61dafb;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.3rem;
+    margin: 1.2rem auto 2rem;
+    max-width: 600px;
+    color: #cccccc;
+  }
+  
+  /* === CTA Buttons === */
+  .cta-button, .link-button {
+    display: inline-block;
+    padding: 0.8rem 1.6rem;
+    background-color: #ffb400;
+    color: #121212;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .cta-button:hover,
+  .link-button:hover {
+    background-color: #f7a200;
+    transform: scale(1.05);
+  }
+  
+  /* === TECH STACK SECTION === */
+  .tech-stack-preview {
+    text-align: center;
+    margin: 4rem 0 3rem;
+  }
+  
+  .tech-stack-preview h2 {
+    font-size: 2rem;
+    color: #00e0ff;
+    font-family: 'Space Grotesk', sans-serif;
+    margin-bottom: 1rem;
+  }
+  
+  .tech-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+  
+  .tech-icons img {
+    width: 60px;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: all 0.3s ease;
+  }
+  
+  .tech-icons img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+  }
+  
+  /* === SECTION CARDS === */
+  .about-preview,
+  .highlight-project,
+  .connect-section {
+    background-color: #1e1e1e;
+    padding: 2rem;
+    border-radius: 16px;
+    margin: 2.5rem 0;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+  }
+  
+  .about-preview:hover,
+  .highlight-project:hover,
+  .connect-section:hover {
+    transform: translateY(-4px);
+  }
+  
+  .about-preview h2,
+  .highlight-project h2,
+  .connect-section h2 {
+    font-size: 1.8rem;
+    font-family: 'Space Grotesk', sans-serif;
+    color: #ffb400;
+    margin-bottom: 1rem;
+  }
+  
+  .about-preview p,
+  .connect-section p,
+  .highlight-project p {
+    margin: 1rem 0;
+    color: #ccc;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* === SECTION DIVIDER (Optional) === */
+  section:not(:last-child) {
+    border-bottom: 1px solid #292929;
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+  }  
+
+  .tech-icons svg {
+    color: #61dafb;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .tech-icons svg:hover {
+    transform: scale(1.2);
+    color: #ffb400;
+  }
+  

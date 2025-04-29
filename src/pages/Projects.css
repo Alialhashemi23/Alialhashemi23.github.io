@@ -1,0 +1,17 @@
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center; /* <-- THIS centers them horizontally */
+    margin-top: 0.5rem;
+  }  
+  
+  .tech-tag {
+    background-color: #61dafb; /* Light blue background */
+    color: #222; /* Dark text */
+    padding: 0.3rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  
