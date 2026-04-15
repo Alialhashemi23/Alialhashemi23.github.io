@@ -1,0 +1,18 @@
+{
+  "name": "portfolio-site",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d dist"
+  },
+  "homepage": "https://alialhashemi23.github.io",
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^3.0.0",
+    "svelte": "^4.2.0",
+    "vite": "^5.0.0"
+  },
+  "type": "module"
+}
