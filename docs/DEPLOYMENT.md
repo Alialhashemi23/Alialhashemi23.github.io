@@ -19,7 +19,7 @@ npx playwright install chromium
 npm run test:browser
 ```
 
-If an existing Chromium installation is used, set `PLAYWRIGHT_CHROMIUM_EXECUTABLE` to its executable path for the browser-check command. This is optional; CI uses the Playwright-managed browser.
+If an existing Chromium installation is used, set `PLAYWRIGHT_CHROMIUM_EXECUTABLE` to its executable path for the browser-check command. CI uses the hosted Ubuntu runner’s installed Chrome and records its version, avoiding a separate browser download.
 
 ## Manual static deployment
 

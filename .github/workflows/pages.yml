@@ -27,8 +27,11 @@ jobs:
       - run: npm run check
       - run: npm run build
       - run: npm test
-      - run: npx playwright install --with-deps chromium
+      - name: Record runner browser version
+        run: google-chrome --version
       - run: npm run test:browser
+        env:
+          PLAYWRIGHT_CHROMIUM_EXECUTABLE: /usr/bin/google-chrome
       - name: Save browser failure evidence
         if: failure()
         uses: actions/upload-artifact@v4
@@ -51,6 +54,10 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - name: Configure Pages artifact deployments
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method PUT "repos/${{ github.repository }}/pages" -f build_type=workflow
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
