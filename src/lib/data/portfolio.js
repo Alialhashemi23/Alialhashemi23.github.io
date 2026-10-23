@@ -318,8 +318,8 @@ export const supporting = [
   {
     title: 'Relic Diver',
     category: 'Multiplayer & persistence',
-    image: '/images/relic-diver.webp',
-    alt: 'Actual Relic Diver gameplay showing a character exploring a three-dimensional ruin',
+    image: '/images/relic-diver-menu.webp',
+    alt: 'Relic Diver pause menu showing Roll Caskett and her equipped buster statistics',
     description:
       'A Godot 3D roguelike fan prototype with online co-op, reconnect and host migration, plus a Node.js/PostgreSQL account-progression backend.',
     lesson:

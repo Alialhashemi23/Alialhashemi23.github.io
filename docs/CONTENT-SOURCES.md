@@ -18,7 +18,7 @@ Case studies describe the implementation and its decisions without asserting sol
 
 ## Images
 
-- `relic-diver.webp`: optimized from `screenshots/gameplay.png` in `Alialhashemi23/Megaman-Legends-Rogue`, commit `35e616aab3f81833f27d2ec017e3e4b50f954f9c`. Actual game capture. Mega Man characters and source character assets belong to Capcom; the fan project’s [credits and notices](https://github.com/Alialhashemi23/Megaman-Legends-Rogue/blob/35e616aab3f81833f27d2ec017e3e4b50f954f9c/README.md#credits-and-licensing) distinguish third-party assets from original work.
+- `relic-diver-menu.webp`: optimized from `screenshots/pause-roll.png` in `Alialhashemi23/Megaman-Legends-Rogue`, commit `35e616aab3f81833f27d2ec017e3e4b50f954f9c`. Actual pause-menu capture featuring Roll Caskett. Mega Man characters and source character assets belong to Capcom; the fan project’s [credits and notices](https://github.com/Alialhashemi23/Megaman-Legends-Rogue/blob/35e616aab3f81833f27d2ec017e3e4b50f954f9c/README.md#credits-and-licensing) distinguish third-party assets from original work.
 - `kishmish.webp`: optimized from `docs/images/home.png` in `Alialhashemi23/kishmish-nano`, commit `84653f90464088b77337f6fa48c5c24b26809540`. Actual software framebuffer capture; not a photograph of handheld hardware. Original project code/assets use the [MIT license](https://github.com/Alialhashemi23/kishmish-nano/blob/84653f90464088b77337f6fa48c5c24b26809540/LICENSE).
 - Architecture sketches and social preview: authored for the portfolio.
 
