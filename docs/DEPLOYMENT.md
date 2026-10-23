@@ -6,7 +6,7 @@ The canonical source branch is `main`. The site is a prerendered SvelteKit build
 
 `.github/workflows/pages.yml` checks types/Svelte diagnostics, builds, verifies static output, and runs Chromium visitor/accessibility checks. Main-branch builds upload a Pages artifact and deploy with GitHub's official Pages actions. Pull requests run the same checks without deploying.
 
-The repository Pages source must be **GitHub Actions**. In Settings → Pages, choose GitHub Actions if reconfiguring the repository. The `github-pages` environment must allow deployment from `main`.
+The existing Pages site must remain enabled, and the `github-pages` environment must allow deployment from `main`. The workflow deploys artifacts through GitHub’s official Pages deployment action. It was verified successfully with the repository’s existing legacy source setting; no administrative settings change is required. The `gh-pages` branch retains the initial deployment snapshot for rollback and should not receive routine source updates.
 
 ## Local verification
 
